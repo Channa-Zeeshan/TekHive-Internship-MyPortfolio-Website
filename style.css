@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 50px;
+    align-items: center;
+}
+.navbar{
+    width: 60%;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    
+    list-style-type: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+.navbar ul li a:hover{
+    color: #e97044;
+    border-bottom: 1px solid #e97044;
+   
+}
+.container{
+    
+    background-image:url(./images/cover-pic.jpg); 
+    
+    min-height: 100vh;
+    position: relative;
+    
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: -30px;
+    width: auto;
+    background-size:cover;
+    background-position: center;
+}
+/*
+.container::before{
+    
+    background:url(./images/cover-pic.jpg);
+    background-size:cover;
+    
+}
+*/
+.logo{
+    color: #fff;
+}
+.logo  h1{
+    font-size: 30px;
+}
+.logo h1:hover{
+    cursor: pointer;
+    color: #e97044;
+}
+.detail{
+   
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+   
+    float: right;
+    margin-right: 70px;
+    align-items: flex-start;
+    justify-content: center;
+    height: 400px;
+
+   
+}
+.name h1{
+   
+
+}
+
+.name h1 span{
+    position: absolute;
+    color:#e97044;
+    animation: animate-name;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    display: inline-block;
+    font-size: 50px;
+
+   
+    
+}
+@keyframes animate-name{
+    from{
+        
+        right: 0;
+    }
+    to{   
+     right: 180px;
+    }
+}
+@keyframes animate-profession{
+    from{
+        
+        font-size: 30px;
+    }
+    to{   
+     letter-spacing: 2px;
+     font-size: 35px;
+    }
+}
+.name h1{
+    font-size: 40px;
+    line-height: 70px;
+}
+.profession h2{
+    position: relative;
+    font-size:30px ;
+    line-height: 60px;
+    margin-bottom: 20px;
+    animation-name: animate-profession;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 2s;
+
+}
+.info p{
+    line-height: 30px;
+    font-size: 14px;
+    position: relative;
+    animation-name: animate-info;
+    animation-duration: 5s;
+    animation-delay: 2s;
+   
+}
+@keyframes animate-info{
+    from{
+        left:-400px;
+        
+    }
+    to{   
+     left:0px;
+    
+    }
+}
+
+.about-section{
+    background-color: #0c0b0b;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+   
+    width: 60%;
+}
+
+.title-about{
+ width: 20%;
+ 
+}
+ .title-about h1{
+    padding: 10px;
+    margin-right: 10px;
+    color: #e97044; 
+    font-size: 30px;
+ }
+ .title-about h1:hover{
+    cursor: pointer;
+   
+    border-right: 2px solid #e97044;
+ }
+
+.about-info{
+    width: 80%;
+    
+    text-align: justify;
+    
+}
+.about-info p{
+    font-size: 16px;
+}
+.side{
+    width: 30%;
+   
+    background: url(./images/side-pic.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    height: 60vh;
+    
+}
+.services{
+    background-color:#131212 ;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.service-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 85%;
+    margin: auto;
+  
+    justify-content: space-around;
+    column-gap: 50px;
+}
+.about-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.about-services h1 span{
+    color: #e97044;
+}
+.about-services h1{
+    font-size: 30px;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+.about-services h1:hover{
+    border-bottom: 2px solid #e97044;
+}
+
+.services-card{
+    display: flex;
+    justify-content: center;
+    
+    row-gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 40vh;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.data h2{
+    color: #e97044;
+}
+.my-service i{
+   
+    height: 30px;
+}
+.data p{
+    font-size: 14px;
+}
+.projects{
+    background-color:#242323 ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    width:100%;
+}
+.project-pic img{
+    width: 300px;
+    border-radius: 15px;
+   
+    
+    
+    
+}
+.project-pic img:hover{
+    width: 310px;
+    cursor: pointer;
+    opacity: 0.5;
+   
+   
+}
+.project-pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.project-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: auto;
+}
+
+.my-projects h1{
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+.my-projects h1:hover{
+    border-bottom: 2px solid #e97044;
+}
+.my-projects h1 span{
+    color: #e97044;
+}
+footer{
+    background-color:#3a3a3a ;
+    min-height: 30vh;
+    
+    
+}
+.footer-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    justify-content: space-between;
+   
+
+}
+
+.my-info{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    width: 300px;
+    
+
+}
+.my-info-heading h1{
+    font-size: 40px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.my-info-heading h1 span{
+    color: #e97044;
+}
+.my-info-data p{
+    font-size: 12px;
+}
+.services-heading{
+    margin-top: 30px;
+}
+.services-heading h1 span{
+    color: #e97044;
+}
+.service-list ul{
+    list-style-type: none;
+    line-height: 30px;
+
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    
+}
+.icons{
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+   
+    padding: 0px;
+   
+}
+.icons i:hover{
+    color: #e97044;
+}
+
+@media only screen and ( max-width: 700px) {
+   nav{
+    flex-direction: column;
+    
+   }
+   .navbar{
+    font-size: 8px;
+   }
+   .project-row{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   
+}
+.service-row{
+    
+    grid-template-columns: repeat(1,1fr);
+   
+}
+.footer-container{
+    
+    grid-template-columns: repeat(1, 1fr);
+}
+.logo  h1{
+    font-size: 30px;
+}
+.name h1 span{
+    
+   
+    font-size: 10px;
+
+   
+    
+}
+.name h1{
+    font-size:15px;
+    line-height:15px;
+}
+.profession h2{
+    font-size: 12px;
+    animation: none;
+    line-height: 15px;
+}
+.info p{
+    line-height: 15px;
+    font-size: 10px;
+}
+.about{
+    flex-direction: column;
+    row-gap: 40px;
+}
+.about-section{
+    
+}
+.about-info p{
+    font-size: 10px;
+}
+.title-about h1:hover{
+   
+   
+    border-bottom: 2px solid #e97044;
+    border-right: 0px solid #e97044;
+ }
+ .services-card{
+    margin-bottom: 20px;
+ }
+ 
+   
+  }
+
+  @media only screen and ( min-width:700px) and (max-width: 980px) {
+    nav{
+    
+     
+    }
+    .navbar{
+     font-size: 15px;
+    }
+    .project-row{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+    
+ }
+ .service-row{
+     
+     grid-template-columns: repeat(2,1fr);
+    
+ }
+ .footer-container{
+     
+     grid-template-columns: repeat(2, 1fr);
+ }
+ .logo  h1{
+     font-size: 40px;
+ }
+ .name h1 span{
+     
+    
+     font-size: 25px;
+ 
+    
+     
+ }
+ .name h1{
+     font-size:25px;
+     line-height:25px;
+ }
+ .profession h2{
+     font-size: 20px;
+     animation: none;
+     line-height: 25px;
+ }
+ .info p{
+     line-height: 15px;
+     font-size: 15px;
+ }
+ .about{
+   
+ }
+ .about-section{
+     
+ }
+ .about-info p{
+     font-size: 20px;
+ }
+ .title-about h1:hover{
+    
+    
+    
+  }
+  .services-card{
+     margin-bottom: 20px;
+  }
+  
+    
+   }
+ 
